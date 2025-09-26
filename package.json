@@ -1,6 +1,7 @@
 {
   "name": "vite-plugin-favicon-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type": "module",
   "description": "A Vite plugin for generating favicons from a source image using the favicons library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -8,6 +9,11 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json",
+    "./*": "./dist/*.js"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
