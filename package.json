@@ -1,0 +1,49 @@
+{
+  "name": "vite-plugin-favicon-generator",
+  "version": "1.0.0",
+  "description": "A Vite plugin for generating favicons from a source image using the favicons library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "favicon",
+    "icon",
+    "generator",
+    "build-tool"
+  ],
+  "author": "ISAPP <contact@isapp.be>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isap-ou/vite-plugin-favicon-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isap-ou/vite-plugin-favicon-generator/issues"
+  },
+  "homepage": "https://github.com/isap-ou/vite-plugin-favicon-generator#readme",
+  "peerDependencies": {
+    "vite": ">=5.0.0"
+  },
+  "dependencies": {
+    "favicons": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
