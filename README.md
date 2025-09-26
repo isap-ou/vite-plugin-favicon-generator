@@ -1,5 +1,9 @@
 # vite-plugin-favicon-generator
 
+<p align="center">
+<img src="https://static.isap.me/vite-plugin-favicon-generator.png" width="1280" title="vite-plugin-favicon-generator">
+</p>
+
 A Vite plugin that automatically generates favicons from a source image using the powerful [favicons](https://github.com/itgalaxy/favicons) library.
 
 ## Features
