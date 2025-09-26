@@ -141,7 +141,7 @@ export default function viteFaviconPlugin(options: ViteFaviconOptions = {}): Plu
                 // Find the closing </head> tag and insert favicon HTML before it
                 const headCloseTag = html.lastIndexOf('</head>');
                 if (headCloseTag === -1) {
-                    this.warn('Could not find </head> tag in index.html to inject favicon tags');
+                    console.warn('Could not find </head> tag in index.html to inject favicon tags');
                     return html;
                 }
 
