@@ -205,6 +205,42 @@ export default defineConfig({
   ]
 })
 ```
+### Laravel
+
+```js
+// vite.config.js
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import faviconPlugin from 'vite-plugin-favicon-generator'
+
+export default defineConfig({
+  plugins: [
+    laravel(),
+    faviconPlugin({
+        source: 'resources/images/favicon.png',
+        outputDir: 'public/favicons',
+        publicPath: '/favicons',
+        htmlOutput: 'resources/views/favicons.blade.php',
+        injectHtml: false,
+        icons: {
+            android: true,
+            appleIcon: true,
+            appleStartup: false,
+            favicons: true,
+            windows: false,
+            yandex: false,
+        },
+    })
+  ]
+})
+```
+
+```blade
+{{-- layout.blade.php --}}
+@if(file_exists(resource_path('views/favicons.blade.php')))
+    @include('favicons')
+@endif
+```
 
 ### Custom Output and HTML Generation
 
