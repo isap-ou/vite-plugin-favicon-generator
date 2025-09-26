@@ -97,7 +97,7 @@ export default function viteFaviconPlugin(options: ViteFaviconOptions = {}): Plu
 
                 if (isBuilding) {
                     // Generate favicon files during build
-                    const destPath = path.resolve('dist', outputDir);
+                    const destPath = path.resolve('', outputDir);
 
                     // Create output directory
                     await fs.mkdir(destPath, {recursive: true});
