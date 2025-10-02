@@ -1,10 +1,15 @@
 # vite-plugin-favicon-generator
 
+A Vite plugin that automatically generates favicons from a source image using the powerful [favicons](https://github.com/itgalaxy/favicons) library.
+
 <p align="center">
 <img src="https://static.isap.me/vite-plugin-favicon-generator.png" width="1280" title="vite-plugin-favicon-generator">
 </p>
 
-A Vite plugin that automatically generates favicons from a source image using the powerful [favicons](https://github.com/itgalaxy/favicons) library.
+<p>
+  <a href="https://npmjs.org/package/vite-plugin-favicon-generator" title="View this project on NPM"><img src="https://img.shields.io/npm/v/vite-plugin-favicon-generator.svg" alt="NPM version" /></a>
+  <a href="https://npmjs.org/package/vite-plugin-favicon-generator" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/vite-plugin-favicon-generator.svg" alt="NPM downloads" /></a>
+</p>
 
 ## Features
 
